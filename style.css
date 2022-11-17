@@ -476,8 +476,14 @@ footer {
         gap: 26px;
     }
 
+    
+
     .w-30 {
         width: 30%;
+    }
+
+    .w-48 {
+        width: 48%;
     }
 
     .w-50 {
@@ -486,6 +492,10 @@ footer {
 
     .w-60 {
         width: 60%;
+    }
+
+    .w-80 {
+        width: 80%;
     }
     
     #benefits .container h1 {
@@ -498,7 +508,15 @@ footer {
         gap: 25px;
     }
         
-       
+    #about .container h1:first-child {
+        font-size: 55px;
+    }
+
+    #about .about-text {
+        display: flex;
+        align-items: flex-start;
+        gap: 50px;
+    }
 
 }
 
