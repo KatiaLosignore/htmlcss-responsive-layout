@@ -518,6 +518,17 @@ footer {
         gap: 50px;
     }
 
+    #transparent .container h2 {
+        font-size: 40px;
+    }
+
+    #transparent .container h1 {
+        font-size: 65px;
+    }
+
+    #transparent ul.flex {
+        justify-content: center;
+    }
 }
 
 
