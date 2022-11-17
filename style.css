@@ -1,0 +1,475 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+/* Generics */
+body {
+    font-family: 'PT Sans', sans-serif;
+    padding-top: 80px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+section {
+    min-height: 500px;
+    padding: 3rem 2rem;
+}
+
+  /* Utils */
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+   
+
+
+main {
+    overflow-y: auto;
+}
+
+.flex {
+    display: flex;
+}
+    
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+  
+
+.no-flex {
+    text-align: center;
+}
+
+.mt-10 {
+    margin-top: 10px; 
+}
+
+.mt-15 {
+    margin-top: 15px; 
+}
+   
+
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-55 {
+    margin-top: 55px;
+}
+
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-35 {
+    margin-bottom: 35px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+    
+
+.mb-55 {
+    margin-bottom: 55px;
+}
+
+.size {
+    font-size: 35px;
+}
+
+
+/* header */
+#main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    min-height: 80px;
+    background-color: rgb(0,132,253);
+    box-shadow: 0 0 3px #666;
+    padding: 1rem 2rem;
+}
+    
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-menu {
+    list-style-type: none;
+    display: none;
+    gap: 15px;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.fa-grip-lines, .fa-apple, .fa-file-code, .fa-bars, h2, .col-w  {
+    color: white;
+}
+
+.fa-apple {
+    margin-right: 8px;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+
+.btn-blue {
+    background-color: rgb(0,132,253);
+    color: white;
+}
+
+.btn-violet {
+    background-color:  rgb(151,146,228);
+    color: white;
+}
+
+.btn-white {
+    background-color: white;
+    color: rgb(151,146,228);
+    border-radius: 30px;
+}
+
+.btn-col-black {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+.btn-medium {
+    padding: 10px 60px;
+}
+
+.btn-small {
+    padding: 10px 50px;
+}
+
+.btn-extra-small {
+    padding: 5px 20px;
+}
+
+.btn-large {
+    padding: 20px 90px;
+}
+
+
+button {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    border-color: transparent;
+    font-size: 15px;
+    padding: 2px 5px;
+}
+
+
+/* Demo-application */
+
+#demo {
+    background-color: white;
+}
+    
+    
+
+.card {
+    min-height: 100px;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    padding: 50px;
+}
+    
+    
+ 
+.card-blue {
+    background-color: rgb(181,221,255);
+}
+   
+
+.card-white {
+    background-color: white;
+    
+}
+    
+
+.card-violet {
+    background-color: rgb(151,146,228);
+   
+}
+
+    
+#phone {
+    width: 240px;
+    position: relative;
+    bottom: -50px;
+    left: 40px;
+}
+
+h3 {
+    color: rgb(0,132,253);
+    font-size: 25px;
+}
+
+
+p {
+    line-height: 35px;
+}
+
+.bold {
+    font-weight: bold;
+}
+   
+.color {
+    color: black;
+}
+
+.col-white {
+    color: white;
+}
+
+.col-violet {
+    color: rgb(151,146,228);
+}
+
+.col-orange {
+    color: orange;
+    font-size: 40px;
+}
+
+.col-gray {
+    color:gray;
+}
+
+
+.fa-file-code, .fa-compass-drafting, .fa-laptop-code, .fa-bullhorn {
+    font-size: 70px;
+    color: rgb(0,132,253);
+    margin-bottom: 30px;
+}
+
+.nat {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* Strategic planning */
+
+#planning {
+    background-color: rgb(151,146,228);
+}
+
+
+
+#photo-girl {
+    width: 220px;
+    
+}
+
+.special {
+    text-align: left;
+
+}
+
+#photo-man {
+    width: 210px;
+    margin: 0 auto;
+}
+
+.fa-arrow-down {
+    margin-top: 20px;
+    background-color:  rgb(151,146,228);
+    padding: 11px;
+    border-radius: 20px;
+}
+
+/* Testimonials */
+
+
+
+h1 {
+    color: rgb(151,146,228);
+    font-size: 25px;
+}
+
+
+#testimonial1, #testimonial2, #testimonial3, #image-man {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 10px;
+}
+
+#testimonial1, #testimonial2, #testimonial3 {
+    margin: 0 auto;
+}
+
+
+/* Benefits working */
+
+#benefits {
+    background-color:  rgb(151,146,228);
+}
+   
+
+.start {
+    text-align: left;
+}
+
+.number {
+    font-size: 40px;
+}
+
+/* About us */
+
+
+
+/* Transparente Pricing */
+
+#transparent {
+    background-color:  rgb(151,146,228);
+}
+
+
+ul li:first-child {
+    list-style-type: none;
+}
+
+ul.flex li:last-child {
+    text-decoration: underline;
+}
+
+ul li {
+    color: white;
+}
+
+.space {
+    margin: 0 28px;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 50px;
+    min-height: 80px;
+    background-color: rgb(51,51,51);
+}
+
+.lorem {
+    color: rgb(151,146,228);
+    text-decoration: underline;
+}
+
+.line {
+    line-height: 18px;
+}
+
+
+
+/* Responsive TABLET */
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .flex-column {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+    }
+
+    #demo .card {
+        flex-basis: calc(100% / 3 -2rem);
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    #demo .card:first-child {
+        flex-basis: calc(100% / 3 * 2 -2rem);
+    }
+
+    #demo .card {
+        margin-bottom: 0;
+    }
+
+}
+
+
+/* Responsive LAPTOP */
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+
+/* Responsive Desktop */
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1040px;
+    }
+
+    .fa-bars {
+        display: none;
+    }
+
+    .navbar .navbar-menu {
+        display: flex;
+    }
+    
+    .first-card {
+        display: flex;
+    }
+
+    .w-50 {
+        width: 50%;
+    }
+}
+
+
+
