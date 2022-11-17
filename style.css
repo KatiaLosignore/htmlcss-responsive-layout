@@ -218,7 +218,7 @@ button {
     min-height: 100px;
     border-radius: 20px;
     margin-bottom: 2rem;
-    padding: 50px;
+    padding: 25px;
     word-break: break-word;
 }
 
@@ -259,7 +259,7 @@ h3 {
 
 
 p {
-    line-height: 35px;
+    line-height: 30px;
 }
 
 .bold {
@@ -454,7 +454,7 @@ footer {
         font-size: 50px;
     }
     
-    #planning .size {
+    #planning .card-white p {
         font-size: 11px;
         line-height: 16px;
         margin-top: 28px;
@@ -480,10 +480,26 @@ footer {
         width: 30%;
     }
 
+    .w-50 {
+        width: 50%;
+    }
+
     .w-60 {
         width: 60%;
     }
+    
+    #benefits .container h1 {
+        font-size: 40px;
+    }
+     
+    #benefits .container-card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+        
        
+
 }
 
 
