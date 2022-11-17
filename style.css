@@ -12,9 +12,9 @@ body {
 }
 
 img {
-    display: block;
     max-width: 100%;
 }
+    
 
 section {
     min-height: 500px;
@@ -219,8 +219,13 @@ button {
     border-radius: 20px;
     margin-bottom: 2rem;
     padding: 50px;
+    word-break: break-word;
 }
-    
+
+#demo .card:first-child {
+    padding-bottom: 0;
+}
+
     
  
 .card-blue {
@@ -243,9 +248,9 @@ button {
 #phone {
     width: 240px;
     position: relative;
-    bottom: -50px;
     left: 40px;
 }
+   
 
 h3 {
     color: rgb(0,132,253);
@@ -407,6 +412,15 @@ footer {
 }
 
 
+/* Responsive MOBILE */
+@media screen and (max-width: 480px) {
+     #testimonials .card {
+        text-align: center;
+     }
+    
+}
+   
+
 
 /* Responsive TABLET */
 
@@ -422,19 +436,54 @@ footer {
     }
 
     #demo .card {
-        flex-basis: calc(100% / 3 -2rem);
+        width: calc(100% / 3 - 2rem);
         margin-right: 1rem;
         margin-left: 1rem;
     }
 
     #demo .card:first-child {
-        flex-basis: calc(100% / 3 * 2 -2rem);
+        width: calc(100% / 3 * 2 - 2rem);
     }
 
-    #demo .card {
-        margin-bottom: 0;
+    #photo-girl{
+        width: 50%;
+    }
+    
+
+    #planning .strategic {
+        font-size: 50px;
+    }
+    
+    #planning .size {
+        font-size: 11px;
+        line-height: 16px;
+        margin-top: 28px;
     }
 
+    #planning .card #photo-man {
+        width: 66%;
+    }
+
+    #testimonials .no-flex h1 {
+        font-size: 40px;
+    }
+
+    #testimonials .card{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        gap: 26px;
+    }
+
+    .w-30 {
+        width: 30%;
+    }
+
+    .w-60 {
+        width: 60%;
+    }
+       
 }
 
 
