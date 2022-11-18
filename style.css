@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  html {
+    scroll-margin-top: 75px;
+  }
   
 /* Generics */
 body {
@@ -28,7 +32,6 @@ section {
     margin: 0 auto;
 }
    
-
 
 main {
     overflow-y: auto;
@@ -211,8 +214,7 @@ button {
 #demo {
     background-color: white;
 }
-    
-    
+        
 
 .card {
     min-height: 100px;
@@ -227,7 +229,6 @@ button {
 }
 
     
- 
 .card-blue {
     background-color: rgb(181,221,255);
 }
@@ -250,18 +251,24 @@ button {
     position: relative;
     left: 40px;
 }
-   
+
+.space-text {
+    letter-spacing: 4px;
+}
 
 h3 {
     color: rgb(0,132,253);
     font-size: 25px;
 }
 
+.size-p {
+    font-size: 13px;
+}
 
 p {
     line-height: 30px;
 }
-
+    
 .bold {
     font-weight: bold;
 }
@@ -306,7 +313,6 @@ p {
 }
 
 
-
 #photo-girl {
     width: 220px;
     
@@ -332,17 +338,20 @@ p {
 /* Testimonials */
 
 
-
 h1 {
     color: rgb(151,146,228);
     font-size: 25px;
 }
 
+#testimonials .card .image {
+    overflow: hidden;
+}
 
 #testimonial1, #testimonial2, #testimonial3, #image-man {
     border-radius: 50%;
     width: 180px;
     height: 180px;
+    object-fit: cover;
     margin-bottom: 10px;
 }
 
@@ -368,7 +377,14 @@ h1 {
 
 /* About us */
 
-
+#about .fa-quote-left {
+    position: relative;
+    color: rgb(151,146,228);
+    font-size: 52px;
+    bottom: 143px;
+    left: -47px;
+}
+    
 
 /* Transparente Pricing */
 
@@ -412,12 +428,13 @@ footer {
 }
 
 
+
+
 /* Responsive MOBILE */
 @media screen and (max-width: 480px) {
      #testimonials .card {
         text-align: center;
-     }
-    
+     } 
 }
    
 
@@ -445,6 +462,10 @@ footer {
         width: calc(100% / 3 * 2 - 2rem);
     }
 
+    .btn-medium {
+        padding: 10px 34px;
+    }
+
     #photo-girl{
         width: 50%;
     }
@@ -470,18 +491,15 @@ footer {
 
     #testimonials .card{
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        text-align: left;
-        gap: 26px;
+        align-items: center;
+        gap: 20px;
     }
-
     
-
+        
     .w-30 {
         width: 30%;
     }
-
+    
     .w-48 {
         width: 48%;
     }
@@ -494,9 +512,11 @@ footer {
         width: 60%;
     }
 
+
     .w-80 {
         width: 80%;
     }
+
     
     #benefits .container h1 {
         font-size: 40px;
@@ -504,9 +524,11 @@ footer {
      
     #benefits .container-card {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 25px;
     }
+        
         
     #about .container h1:first-child {
         font-size: 55px;
@@ -516,6 +538,21 @@ footer {
         display: flex;
         align-items: flex-start;
         gap: 50px;
+    }
+
+    
+    #about .fa-quote-left {
+        bottom: 198px;
+        left: 131px;
+    }
+        
+    
+    .fa-arrow-down {
+        font-size: 17px;
+    }
+    
+    #testimonials .card .image {
+        width: 45%;
     }
 
     #transparent .container h2 {
@@ -528,6 +565,14 @@ footer {
 
     #transparent ul.flex {
         justify-content: center;
+    }
+
+    #transparent .container {
+        max-width: 500px;
+    }
+    
+    footer .container {
+        max-width: 390px;
     }
 }
 
@@ -563,7 +608,80 @@ footer {
     .w-50 {
         width: 50%;
     }
+
+    .dw-23 {
+        width: 23%;
+    }
+
+    .dw-30 {
+        width: 30%;
+    }
+
+    .dw-45 {
+        width: 45%;
+    }
+    
+
+    .dw-50 {
+        width: 50%;
+    }
+
+    .dw-80 {
+        width: 80%;
+    }
+
+    #demo figure #phone {
+        width: 285px;
+        left: 40px;
+        bottom: -68px;
+    }
+              
+
+    #planning .container {
+        max-width: 800px;
+    }
+
+    #planning .strategic {
+        display: flex;
+        align-items: flex-end;
+        gap: 30px;
+        margin-top: 100px;
+        margin-bottom: 25px;
+    }
+        
+
+    #testimonials .card {
+        border-radius: 35px;
+    }
+
+    #planning .strategic {
+        font-size: 25px;
+        
+    }
+
+    #planning .strategic #photo-girl  {
+        width: 80%;
+    }
+
+    #planning .card-white {
+        border-radius: 40px;
+    }
+
+    #testimonials .card .image {
+        width: 23%;
+    }
+
+    #about .fa-quote-left {
+        bottom: 143px;
+        left: -47px;
+    }
+         
 }
+ 
+
+    
+
+
 
 
 
